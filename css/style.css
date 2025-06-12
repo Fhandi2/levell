@@ -1,0 +1,754 @@
+:root {
+    --wrn1 : brown;
+    --wrn2 : rgba(251, 243, 230, 1);
+    --wrn3 : gold;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--wrn2);
+    width: 100%;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--wrn1);
+    background-color: var(--wrn3);
+    padding: 5px 20px;
+    border-radius: 25px;
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-logo:hover {
+    background-color: var(--wrn1);
+    color: white;
+}
+
+.navbar .nav-menu {
+    background-color: var(--wrn3);
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.navbar .nav-menu a {
+    color: var(--wrn1);
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+}
+
+.navbar .nav-menu a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.navbar .nav-menu a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid black;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .nav-menu a:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar .nav-icon #humberger-menu {
+    color: var(--wrn1);
+}
+
+.navbar .nav-icon #humberger-menu:hover {
+    color: black;
+}
+
+.nav-icon {
+    display: none;
+}
+/* hero section */
+
+    .hero {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url(../asset/backgroundhero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 10px 50px;
+    }
+
+    .conten {
+        box-sizing: border-box;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+    }
+    .conten .conten-text {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        color: var(--wrn1);
+    }
+
+    .conten #btn-klik {
+        /* margin-top: 5%; */
+        width: 10rem;
+        padding: 10px;
+        border-radius: 25px;
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: white;
+        background-color: var(--wrn1);
+        cursor: pointer;
+        transition: 0.2s linear;
+    }
+
+    .conten #btn-klik:hover {
+        background-color: var(--wrn3);
+        color: var(--wrn1);
+    }
+
+    .conten a {
+        width: 10rem;
+        margin-top: 2rem;
+    }
+
+    .conten img {
+        height: 45rem;
+    }
+
+/* hero section end */
+
+/* main1 */
+    #main1 {
+        background-image: url(../asset/latarBelajar.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+    }
+
+    .main1-box {
+        background-color: var(--wrn2);
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        padding: 20px;
+    }
+
+    .main1-box .h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+/* ===================== Card ======================= */
+
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .card-container .card {
+        max-width: 200px;
+        background-color: brown;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+
+    .card img {
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    .card p {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: white;
+    }
+
+    .card button {
+        padding: 10px 40px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 700;
+        box-sizing: border-box;
+    }
+
+/* ===================== ---- ======================= */
+/* main1 end */
+
+/* main2 */
+/* ===================== MAP ======================= */
+    .main2 {
+        padding: 5rem;
+        width: 100%;
+    }
+
+    .main2 .judul {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .map-box {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 1.5rem;
+        width: 100%;
+    }
+
+    .map-text {
+        width: 50%;
+        font-size: 2rem;
+    }
+    iframe {
+        width: 50%;
+        height: 30rem;
+        border-radius: 16px;
+    }
+/* ===================== ---- ======================= */
+/* main2 end */
+
+/* main3 */
+/* ===================== ---- ======================= */
+    #main3 {
+        padding: 50px;
+        width: 100%;
+        background-color: var(--wrn1);
+        background-image: url(../asset/backgroundhero2.jpg);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    #main3 h2 {
+        font-size: 3rem;
+        text-align: center;
+        color: var(--wrn2);
+    }
+    .gallery {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .gallery img {
+        width: 30rem;
+        margin: 10px;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 4px 7px 7px 0px #00000042;
+        transition: 0.5s linear;
+    }
+
+    .gallery img:hover {
+        filter: grayscale(1);
+        transform: scale(1.03);
+    }
+
+    #main3 .main3-text {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #main3 a {
+        background-color: rgb(121, 17, 17);
+        color: white;
+        padding: 20px;
+        border-radius: 25px;
+        font-weight: 600;
+        transition: 0.3s linear;
+    }
+
+    #main3 a:hover {
+        background-color: var(--wrn3);
+        color: var(--wrn1);
+    }
+/* ===================== ---- ======================= */
+/* main3 end */
+
+/* about */
+/* ===================== ---- ======================= */
+    #about {
+        padding: 30px;
+        width: 100%;
+    }
+/* ===================== ---- ======================= */
+/* about end */
+
+/* footer */
+/* ===================== ---- ======================= */
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px;
+        color: var(--wrn1);
+        width: 100%;
+    }
+
+    .foot-sosial a {
+        color: var(--wrn1);
+        margin: 1rem;
+    }
+
+    .foot-sosial a:hover {
+        color: var(--wrn3);
+    }
+
+    .foot-menu a {
+        color: var(--wrn1);
+        margin: 1rem;
+    }
+
+    .created a {
+        color: black;
+        font-weight: 600;
+    }
+/* ===================== ---- ======================= */
+/* footer end */
+
+/* media-responsive */
+
+/* tabel */
+@media (min-width: 601px) and (max-width: 840px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .conten a {
+        width: 10rem;
+        margin-top: 2rem;
+    }
+
+    .nav-icon {
+        display: inline-block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--wrn1);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.2s linear;
+    }
+    
+    .aktif {
+        right: 0;
+    }
+
+    .navbar .nav-menu a {
+        color: var(--wrn1);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .nav-menu a::after {
+        transform-origin: 0 0;
+    }
+
+    .hero {
+        padding: 40px;
+    }
+
+    .conten {
+        flex-direction: column;
+    }
+
+    .conten h1 {
+        font-size: 5rem;
+    }
+
+    .conten img {
+        margin-top: 20px;
+        height: 100%;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+
+}
+/* handphone */
+@media (min-width: 470px) and (max-width: 600px) {
+    html {
+        font-size: 50%;
+    }
+
+    .nav-icon {
+        display: inline-block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--wrn1);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.2s linear;
+    }
+    
+    .aktif {
+        right: 0;
+    }
+
+    .navbar .nav-menu a {
+        color: var(--wrn1);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .nav-menu a::after {
+        transform-origin: 0 0;
+    }
+    .hero {
+        display: block;
+        padding: 40px 40px;
+        height: auto;
+    }
+    .conten {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .conten a {
+        width: 17rem;
+        margin-top: 2rem;
+    }
+
+    .conten #btn-klik {
+        width: 100px;
+        text-align: center;
+    }
+
+    .conten img {
+        width: 97%;
+        height: 45%;
+    }
+
+    #main1 {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .h2 {
+        font-size: 2rem;
+    }
+/* ===================== CARD ======================= */
+    .card-container .card {
+        max-width: 110px;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+
+    .card button {
+        padding: 10px 20px;
+    }
+
+    .card img {
+        border-radius: 5px;
+    }
+/* ===================== ---- ======================= */
+
+    .gallery {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
+/* ===================================================== */
+@media (min-width: 393px) and (max-width: 469px) {
+    html {
+        font-size: 55%;
+    }
+
+    .hero {
+        display: block;
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .nav-icon {
+        display: inline-block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--wrn1);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.2s linear;
+    }
+    
+    .aktif {
+        right: 0;
+    }
+
+    .navbar .nav-menu a {
+        color: var(--wrn1);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .nav-menu a::after {
+        transform-origin: 0 0;
+    }
+
+    .conten {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .conten a {
+        width: 15rem;
+        margin-top: 2rem;
+    }
+    .conten #btn-klik {
+        width: 100px;
+        text-align: center;
+    }
+
+    .conten img {
+        width: 97%;
+        height: 50%;
+    }
+
+    #main1 {
+        padding: 10px;
+    }
+
+    .h2 {
+        font-size: 2rem;
+    }
+
+    /* ===================== CARD ======================= */
+    .card-container .card {
+        max-width: 110px;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+
+    .card button {
+        padding: 10px 20px;
+    }
+
+    .card img {
+        border-radius: 5px;
+    }
+/* ===================== ---- ======================= */
+
+    .map-box {
+        flex-direction: column;
+    }
+
+    .main2 {
+        padding: 30px;
+    }
+
+    .map-text {
+        width: 100%;
+    }
+
+    iframe {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+        .gallery {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+}
+/* ====================================================== */
+@media (min-width: 50px) and (max-width: 392px){
+        html {
+        font-size: 48%;
+        width: 100%;
+    }
+
+        .nav-icon {
+        display: inline-block;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: var(--wrn1);
+        width: 30rem;
+        height: 100vh;
+        transition: 0.2s linear;
+    }
+    
+    .aktif {
+        right: 0;
+    }
+
+    .navbar .nav-menu a {
+        color: var(--wrn1);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .navbar .nav-menu a::after {
+        transform-origin: 0 0;
+    }
+
+    .hero {
+        display: block;
+        /* padding-top: 50px; */
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+    .conten {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .conten a {
+        width: 17rem;
+        margin-top: 2rem;
+    }
+
+    .conten #btn-klik {
+        width: 100px;
+        text-align: center;
+    }
+
+    .conten img {
+        width: 97%;
+        height: 50%;
+    }
+
+    #main1 {
+        padding: 10px;
+    }
+
+    .h2 {
+        font-size: 2rem;
+    }
+
+    /* ===================== CARD ======================= */
+    .card-container .card {
+        max-width: 110px;
+        padding: 10px 10px;
+        box-sizing: border-box;
+    }
+
+    .card button {
+        padding: 10px 20px;
+    }
+
+    .card img {
+        border-radius: 5px;
+    }
+/* ===================== ---- ======================= */
+
+    .map-box {
+        flex-direction: column;
+    }
+
+        .main2 {
+        padding: 20px;
+    }
+
+    .map-text {
+        width: 100%;
+    }
+
+
+    iframe {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .gallery {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 100%;
+    }
+    #main3 {
+        padding: 10px;
+    }
+
+    .main1-box {
+        padding: 20px 10px;
+    }
+}
